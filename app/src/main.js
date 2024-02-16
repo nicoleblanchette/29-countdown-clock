@@ -6,7 +6,6 @@ const buttons = document.querySelectorAll("[data-time]");
 const displayTimeLeft = seconds => {
   const minutes = Math.floor(seconds / 60);
   const remainderSeconds = seconds % 60;
-  console.log({ minutes, remainderSeconds });
   const display = `${minutes}:${remainderSeconds < 10 ? "0" : ""
     }${remainderSeconds}`;
   document.title = display;
